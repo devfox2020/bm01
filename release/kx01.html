@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>koob.ru / klex.ru download helper</title>
+</head>
+<body>
+    
+<script>
+// http://localhost:3001
+// http://ruiny-bm01.netlify.app
+// https://bm01.ruiny.ru
+javascript:(function(){
+    const d = document,
+    src = 'https://bm01.ruiny.ru/kx01.js';
+    if(d.querySelector(`[src=\'$src+'\]`)) return;
+    const s = d.createElement('script');
+    s.src = src;
+    d.head.appendChild(s);
+})()
+</script>
+
+<hr/>
+<h2>koob.ru / klex.ru download helper</h2>
+<b><a href="javascript:(function(){ const d = document, src = 'https://bm01.ruiny.ru/kx01.js'; if(d.querySelector(`[src=\'$src+'\]`)) return; const s = d.createElement('script'); s.src = src; d.head.appendChild(s); })()">kx01</a></b>
+</hr>
+
+<ul>
+    <li>drag <b>kx01</b> on bookmarks bar to use it on klex.ru</li>
+    <li>open, e.g. <a href="https://www.klex.ru/1bz" target="_blank">https://www.klex.ru/1bz</a></li>
+    <li>activate bookmarklet to get changes on page</li>
+    <li>click on <i>format</i> or <i>title</i> to copy to clipboard</li>
+    <li>use right click to download, renaming </li>
+</ul>
+
+
+
+
+<hr/>
+
+<p>bookmarlet code:<br/>
+<textarea>
+    javascript:(function(){
+        const d = document,
+        src = 'http://bm01.ruiny.ru/kx01.js';
+        if(d.querySelector(`[src=\'$src+'\]`)) return;
+        const s = d.createElement('script');
+        s.src = src;
+        d.head.appendChild(s);
+    })()
+</textarea>
+</p>
+
+
+<p>external code: <a href="https://bm01.ruiny.ru/kx01.js">https://bm01.ruiny.ru/kx01.js</a></p>
